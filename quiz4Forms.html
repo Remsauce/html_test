@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form Quiz</title>
+</head>
+<body>
+
+<h1>Register</h1>
+
+<form>
+
+<div>
+<!-- Names -->
+	<label for="first">First Name: </label>
+	<input name="first" id="first" type="text" placeholder="John" required> 
+	<label for="last">Last Name: </label>
+	<input name="last" id="last" type="text" placeholder="Smith" required>
+</div>
+
+<div>
+<!-- Gender -->
+	<label for="male">Male </label>
+	<input name="gender" id="male" type="radio" value="Male">
+	<label for="female">Female </label>
+	<input name="gender" id="female" type="radio" value="Female">
+	<label for="other">Other </label>
+	<input name="gender" id="other" type="radio" value="Other">
+</div>
+
+<div>
+<!-- Email + Password -->
+	<label for="email"> E-mail: </label>
+	<input name="email" id="email" type="email" placeholder="your e-mail" required>
+	<label for="password"> Password: </label>
+	<input name="password" id="password" type="password" placeholder="your password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+</div>
+<div>
+
+<!-- Birthday -->
+	<label for="Birthday"> Birthday: </label>
+	<select name="month">
+		<option value="Month">Month</option>
+		<option value="January">January</option>
+		<option value="February">February</option>
+	</select>
+	<select name="day">
+		<option value="Day">Day</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+	</select name="year">
+	<select>
+		<option value="Year">Year</option>
+		<option value="1989">1989</option>
+		<option value="1990">1990</option>
+	</select>
+</div>
+<!-- Ts&Cs -->
+	<label for="agreed">I agree to the terms and conditions: </label>
+	<input name="agreed" type="checkbox" id="agreed">
+<div>
+	<input type="submit">
+</div>
+
+</form>
+
+</body>
+</html>

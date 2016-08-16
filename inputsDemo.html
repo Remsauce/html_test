@@ -1,0 +1,42 @@
+<!-- radio button -->
+<!-- select tag (drop-down menu)-->
+<!-- textarea tag -->
+
+<!-- The "name" attribute is very important - it allows the browser to identify different actions or values and to store the results of those actions/values according to the name specified. If you don't specify a "name" then that set of data/action will not be sent to the server.
+The "value" attribute is what the computer will extract from your different types of input i.e. the actual data that is extracted. It will appear in the query string that the browser sends to the server e.g. the form below would create a query like: inputsdemo.html?petChoice=CATS&mood=happy&paragraph=hello 
+Remember when labeling: for and id must always match! -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inputs Demo</title>
+</head>
+<body>
+
+<p>Do you prefer cats or dogs?</p>
+
+<form>
+	<label for="dogs">Dogs: </label>
+	<input name="petChoice" id="dogs" type="radio" value="DOGS">
+	
+	<label for="cats">Cats: </label>
+	<input name="petChoice" id="cats" type="radio" value="CATS">
+
+<p>What is your current mood?</p>
+
+	<select name="mood">
+		<option value="happy">:)</option>
+		<option value="neutral">:|</option>
+		<option value="sad">:(</option>
+	</select>
+
+	<textarea name="paragraph" rows="10" cols="20">
+	</textarea>
+
+	<button>Go!</button>
+
+</form>
+
+
+</body>
+</html>
