@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Demo</title>
+</head>
+<body>
+
+<h1>Login</h1>
+
+<!-- The form tag is an empty placeholder that groups all the input tags you place inside it. If you want all the different inputs to be submitted as one form, you'll need the form tag.
+Form tags consist of two things:
+a) Action - where the form sends data to
+b) Method - what HTTP method is executed i.e. "get" data from a server or "post" data to a server/database. If unspecified, the default method is always to Get. -->
+
+<!-- <form action="http://wikipedia.org" method="GET"> 
+
+<label> 
+	Username:
+	<input type="text" placeholder="Username">
+</label>
+
+<label>
+	Password:
+	<input type="password" placeholder="Password">
+</label>
+
+<input type="submit">
+</form>
+ -->
+
+ <!-- For visuallu impaired, there's an alternative syntax to use for creating labels. Just like the syntax above, this allows the computer to read the correct labels. 
+ Also added below are 2 types of form validations:
+ a) Required (presence validation)
+ b) Type/ (format validation)i.e. text/e-mail/number etc -->
+
+<form action="http://wikipedia.org" method="GET"> 
+
+	<label for ="username">Username:</label>
+	<input id="username" type="text" placeholder="Username" required>
+
+	<label for ="email">E-mail</label>
+	<input id="email" type="email" placeholder="E-mail" required>
+
+	<label for="password">Password:</label>
+	<input id="password" type="password" placeholder="Password">
+
+<input type="submit">
+</form>
+
+
+</body>
+</html>
